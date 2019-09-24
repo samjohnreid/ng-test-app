@@ -1,0 +1,9 @@
+.wrapper {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.highlight {
+  background: yellow;
+}
