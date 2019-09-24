@@ -23,7 +23,9 @@ nav ul {
 .wrapper {
   background: #fff;
   border: 1px dashed #000;
-  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 180px;
+  padding: 8px;
 }
 
 .highlight {

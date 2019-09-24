@@ -1,0 +1,12 @@
+.wrapper {
+  background: #fff;
+  border: 1px dashed #000;
+  min-height: 180px;
+  padding: 8px;
+}
+
+.highlight {
+  background: yellow;
+  display: inline-block;
+  margin-top: 10px;
+}

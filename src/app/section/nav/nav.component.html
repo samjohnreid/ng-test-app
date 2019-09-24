@@ -7,8 +7,9 @@
 
   <div class="wrapper">
     <h4>Parent Component</h4>
-    <div><input type="text" /></div>
-    <p>Value of <strong>CHILD</strong> component is:<br><span class="highlight"></span></p>
+    <div><input type="text" #parentcomponent (keyup)="0" /></div>
+    <p>Value of <strong>CHILD</strong> component is:<br><span class="highlight">{{ ChildData }}</span></p>
   </div>
 
+  <app-nav-inner [ParentData]="parentcomponent.value" (childEvent)="ChildData=$event"></app-nav-inner>
 </nav>
