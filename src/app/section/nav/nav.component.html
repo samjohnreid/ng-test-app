@@ -12,4 +12,9 @@
   </div>
 
   <app-nav-inner [ParentData]="parentcomponent.value" (childEvent)="ChildData=$event"></app-nav-inner>
+
+  <div class="wrapper">
+    <input type="text" #testViewChild />
+    <p><button (click)="testingViewChildFunc()">Test @ViewChild()</button></p>
+  </div>
 </nav>

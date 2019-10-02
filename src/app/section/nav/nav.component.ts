@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -9,9 +9,15 @@ export class NavComponent implements OnInit {
 
   public ChildData: string;
 
+  @ViewChild('testViewChild', {static: true}) testingViewChildDecorator: ElementRef;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  testingViewChildFunc() {
+    console.log(this.testingViewChildDecorator.nativeElement.value);
   }
 
 }
