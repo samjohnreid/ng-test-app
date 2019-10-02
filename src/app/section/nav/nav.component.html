@@ -11,6 +11,8 @@
     <p>Value of <strong>CHILD</strong> component is:<br><span class="highlight">{{ ChildData }}</span></p>
   </div>
 
+  <ng-content></ng-content>
+
   <app-nav-inner [ParentData]="parentcomponent.value" (childEvent)="ChildData=$event"></app-nav-inner>
 
   <div class="wrapper">
